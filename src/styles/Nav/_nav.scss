@@ -1,0 +1,57 @@
+@use "../global/" as *;
+
+nav {
+  // background-color: #2600fc;
+  font-family: $big-font;
+  position: fixed;
+  top: 0;
+  right: 0;
+  left: 0;
+}
+
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  max-width: 120rem;
+  margin: 0 auto;
+  font-size: $text-normal;
+  padding: 3rem 2rem;
+  align-items: center;
+  color: $color-white;
+
+  p {
+    font-size: 3rem;
+    font-weight: 700;
+    cursor: pointer;
+  }
+
+  ul {
+    display: flex;
+    gap: 4rem;
+    list-style: none;
+
+    a {
+      color: $color-white;
+      font-weight: 700;
+
+      &:hover {
+        color: #f3f2f4da;
+        transition: all 0.2s;
+      }
+    }
+  }
+
+  span {
+    display: flex;
+    gap: 2rem;
+
+    i {
+      cursor: pointer;
+
+      &:hover {
+        color: #f3f2f4da;
+        transition: all 0.2s;
+      }
+    }
+  }
+}

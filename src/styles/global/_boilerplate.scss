@@ -1,0 +1,28 @@
+@use "./colors" as *;
+@use "./typography" as *;
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+html {
+  font-size: 62.5%;
+  scroll-behavior: smooth;
+}
+
+body {
+  position: relative;
+  font-family: $big-font;
+}
+
+a {
+  text-decoration: none;
+}
+
+.container {
+  max-width: 120rem !important;
+  margin: 0 auto !important;
+  padding: 0 2.5rem !important;
+}
