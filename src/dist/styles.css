@@ -24,6 +24,37 @@ a {
   padding: 0 2.5rem !important;
 }
 
+/* Firefox */
+* {
+  scrollbar-width: thin;
+  scrollbar-color: #db00d9 #ffffff;
+}
+
+/* Chrome, Edge and Safari */
+*::-webkit-scrollbar {
+  width: 12px;
+  width: 12px;
+}
+
+*::-webkit-scrollbar-track {
+  border-radius: 5px;
+  background-color: #ffffff;
+}
+
+*::-webkit-scrollbar-thumb {
+  border-radius: 20px;
+  background-color: #ba04b7;
+  border: 1px solid #ffffff;
+}
+
+*::-webkit-scrollbar-thumb:hover {
+  background-color: #ed00eb;
+}
+
+*::-webkit-scrollbar-thumb:active {
+  background-color: #ed00eb;
+}
+
 nav {
   font-family: "Space Grotesk", sans-serif;
   position: fixed;
@@ -212,4 +243,8 @@ nav {
 
 .green-text {
   color: rgb(14, 203, 129) !important;
+}
+
+.market-section {
+  background-color: #0f051d;
 }/*# sourceMappingURL=styles.css.map */
