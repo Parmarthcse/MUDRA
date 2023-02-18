@@ -30,6 +30,7 @@ nav {
   top: 0;
   right: 0;
   left: 0;
+  z-index: 200;
 }
 
 .navbar {
@@ -57,8 +58,11 @@ nav {
   font-weight: 700;
 }
 .navbar ul a:hover {
-  color: rgba(243, 242, 244, 0.8549019608);
-  transition: all 0.2s;
+  transition: all 0.3s;
+  background-clip: text;
+  -webkit-background-clip: text;
+  color: transparent;
+  background-image: linear-gradient(25deg, #2600fc, #ff00ea);
 }
 .navbar span {
   display: flex;
@@ -68,8 +72,11 @@ nav {
   cursor: pointer;
 }
 .navbar span i:hover {
-  color: rgba(243, 242, 244, 0.8549019608);
-  transition: all 0.2s;
+  transition: all 0.3s;
+  background-clip: text;
+  -webkit-background-clip: text;
+  color: transparent;
+  background-image: linear-gradient(25deg, #2600fc, #ff00ea);
 }
 
 .hero-section {
@@ -80,7 +87,7 @@ nav {
 
 .hero-content {
   position: absolute;
-  top: 50%;
+  top: 53%;
   left: 50%;
   transform: translate(-50%, -50%);
   width: 100%;
@@ -88,14 +95,121 @@ nav {
 .hero-content__text {
   font-size: 7rem;
   color: #f3f2f4;
-  width: 100%;
+  max-width: 100rem;
+  height: -moz-fit-content;
+  height: fit-content;
   text-align: center;
   text-transform: uppercase;
   line-height: 1.1;
+  position: relative;
+  margin: 0 auto;
+}
+@media (max-width: 1200px) {
+  .hero-content__text {
+    font-size: 6rem;
+  }
+}
+@media (max-width: 1000px) {
+  .hero-content__text {
+    font-size: 5rem;
+  }
 }
 .hero-content__text span {
   background-clip: text;
-  -webkit-background-clip: text; /* for Safari/Chrome */
+  -webkit-background-clip: text;
   color: transparent;
   background-image: linear-gradient(25deg, #2600fc, #ff00ea);
+}
+
+.btc-float {
+  position: absolute;
+  top: -190px;
+  left: -277px;
+  animation: move 2s infinite;
+}
+@media (max-width: 1200px) {
+  .btc-float {
+    left: -200px;
+  }
+}
+@media (max-width: 1000px) {
+  .btc-float {
+    left: -160px;
+  }
+}
+
+.eth-float {
+  position: absolute;
+  top: -190px;
+  right: -277px;
+  animation: move 2s infinite;
+}
+@media (max-width: 1200px) {
+  .eth-float {
+    right: -200px;
+  }
+}
+@media (max-width: 1000px) {
+  .eth-float {
+    right: -160px;
+  }
+}
+
+@keyframes move {
+  0%, 100% {
+    transform: translateY(0) scale(0.14);
+  }
+  50% {
+    transform: translateY(-20px) scale(0.14);
+  }
+}
+.coin-slider {
+  max-width: 100rem;
+  height: 21rem;
+  align-items: center;
+  display: flex;
+  justify-content: space-between;
+  padding: 0 1rem;
+  margin: 0 auto;
+  text-align: center;
+  margin-top: 3rem;
+}
+
+.slider-coin {
+  font-size: 2rem;
+  color: #f3f2f4;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  width: 20rem;
+  height: auto;
+  -webkit-user-select: none;
+     -moz-user-select: none;
+          user-select: none;
+}
+.slider-coin img {
+  width: 9rem;
+  height: 9rem;
+  margin-bottom: 1rem;
+}
+.slider-coin__name {
+  font-weight: 600;
+  font-family: "Space Grotesk", sans-serif;
+}
+.slider-coin__name span {
+  color: rgb(14, 203, 129);
+}
+.slider-coin__price {
+  font-weight: 600;
+  margin-top: 0.5rem;
+  font-size: 2.2rem;
+}
+
+.red-text {
+  color: red !important;
+}
+
+.green-text {
+  color: rgb(14, 203, 129) !important;
 }/*# sourceMappingURL=styles.css.map */

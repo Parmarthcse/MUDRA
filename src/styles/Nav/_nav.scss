@@ -1,12 +1,12 @@
 @use "../global/" as *;
 
 nav {
-  // background-color: #2600fc;
   font-family: $big-font;
   position: fixed;
   top: 0;
   right: 0;
   left: 0;
+  z-index: 200;
 }
 
 .navbar {
@@ -35,8 +35,11 @@ nav {
       font-weight: 700;
 
       &:hover {
-        color: #f3f2f4da;
-        transition: all 0.2s;
+        transition: all 0.3s;
+        background-clip: text;
+        -webkit-background-clip: text;
+        color: transparent;
+        background-image: $color-blue-purp;
       }
     }
   }
@@ -49,8 +52,11 @@ nav {
       cursor: pointer;
 
       &:hover {
-        color: #f3f2f4da;
-        transition: all 0.2s;
+        transition: all 0.3s;
+        background-clip: text;
+        -webkit-background-clip: text;
+        color: transparent;
+        background-image: $color-blue-purp;
       }
     }
   }
