@@ -51,9 +51,9 @@ function MarketUpdate() {
                     <p
                       className={
                         "slider-coin__price " +
-                        (item.price_change_percentage_24h < 0
-                          ? "red-text"
-                          : "green-text")
+                        (item.price_change_percentage_24h >= 0
+                          ? "green-text"
+                          : "red-text")
                       }
                     >
                       {item.price_change_24h.toFixed(2) + " %"}

@@ -26,10 +26,10 @@ function Navbar() {
               <a href="#market">Market</a>
             </li>
             <li>
-              <a href="#home">Team</a>
+              <a href="#choose-us">Choose Us</a>
             </li>
             <li>
-              <a href="#home">Collection</a>
+              <a href="#join">Join</a>
             </li>
           </ul>
           <span>
