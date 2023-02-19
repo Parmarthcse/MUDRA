@@ -57,7 +57,7 @@ a {
 
 nav {
   font-family: "Space Grotesk", sans-serif;
-  position: fixed;
+  position: absolute;
   top: 0;
   right: 0;
   left: 0;
@@ -108,6 +108,11 @@ nav {
   -webkit-background-clip: text;
   color: transparent;
   background-image: linear-gradient(25deg, #2600fc, #ff00ea);
+}
+
+.sticky-nav {
+  background: linear-gradient(to top, transparent 15%, #0f051d 85%);
+  position: fixed;
 }
 
 .hero-section {

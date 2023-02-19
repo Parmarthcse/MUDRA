@@ -1,7 +1,21 @@
+import { useState } from "react";
+
 function Navbar() {
+  const [sticky, setSticky] = useState(false);
+
+  const handleScroll = () => {
+    if (window.scrollY > 150) {
+      setSticky(true);
+    } else {
+      setSticky(false);
+    }
+  };
+
+  window.addEventListener("scroll", handleScroll);
+
   return (
     <>
-      <nav>
+      <nav className={sticky ? "sticky-nav" : ""}>
         <div className="navbar">
           <p>COINDOM</p>
           <ul>

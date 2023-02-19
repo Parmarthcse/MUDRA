@@ -2,7 +2,7 @@
 
 nav {
   font-family: $big-font;
-  position: fixed;
+  position: absolute;
   top: 0;
   right: 0;
   left: 0;
@@ -60,4 +60,9 @@ nav {
       }
     }
   }
+}
+
+.sticky-nav {
+  background: linear-gradient(to top, transparent 15%, $bg-black 85%);
+  position: fixed;
 }
