@@ -1,3 +1,4 @@
+import Footer from "../components/Footer";
 import Hero from "../components/Hero";
 import Join from "../components/Join";
 import MarketUpdate from "../components/MarketUpdate";
@@ -10,6 +11,7 @@ function Home() {
       <MarketUpdate />
       <WhyUs />
       <Join />
+      <Footer />
     </>
   );
 }
