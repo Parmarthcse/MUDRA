@@ -63,6 +63,8 @@ nav {
 }
 
 .sticky-nav {
-  background: linear-gradient(to top, transparent 15%, $bg-black 85%);
+  // background: linear-gradient(to top, transparent 20%, $bg-black 80%);
+  background-color: $bg-black;
+  box-shadow: 0px 10px 5px 0px rgba(0, 0, 0, 0.16);
   position: fixed;
 }
