@@ -6,10 +6,10 @@ function Navbar() {
           <p>COINDOM</p>
           <ul>
             <li>
-              <a href="#home">About</a>
+              <a href="#home">Home</a>
             </li>
             <li>
-              <a href="#home">Roadmap</a>
+              <a href="#market">Market</a>
             </li>
             <li>
               <a href="#home">Team</a>

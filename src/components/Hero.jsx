@@ -32,7 +32,7 @@ function Hero() {
 
   return (
     <>
-      <section className="hero-section">
+      <section id="home" className="hero-section">
         <div className="container">
           <div className="hero-content">
             <div className="hero-content__text">
