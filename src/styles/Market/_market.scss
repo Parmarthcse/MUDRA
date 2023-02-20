@@ -13,6 +13,10 @@
     color: $color-white;
     font-size: 4.5rem;
     margin-bottom: 3rem;
+
+    @media (max-width: 430px) {
+      font-size: 4rem;
+    }
   }
 
   &__coin-list {
@@ -20,6 +24,8 @@
     height: auto;
     display: flex;
     flex-direction: column;
+    white-space: nowrap;
+    overflow-x: auto;
 
     &__top {
       display: grid;
@@ -31,6 +37,11 @@
       font-weight: 500;
       background: $color-blue-purp;
       border-radius: 8px 8px 0 0;
+      gap: 2rem;
+
+      @media (max-width: 530px) {
+        gap: 9rem;
+      }
 
       p:first-child {
         text-align: left;
@@ -77,6 +88,7 @@
     height: auto;
     border-bottom: 1px solid $color-white;
     align-items: center;
+    gap: 2rem;
 
     span {
       text-align: left;

@@ -26,7 +26,7 @@ function MarketUpdate() {
     fetchData();
   }, [url]);
 
-  console.log(data);
+  // console.log(data);
 
   return (
     <>
@@ -62,13 +62,13 @@ function MarketUpdate() {
                   </div>
                 ))}
               </div>
-              <div className="market-content__coin-list__pagination">
-                <button>1</button>
-                <button>2</button>
-                <button>3</button>
-                <button>4</button>
-                <button>5</button>
-              </div>
+            </div>
+            <div className="market-content__coin-list__pagination">
+              <button>1</button>
+              <button>2</button>
+              <button>3</button>
+              <button>4</button>
+              <button>5</button>
             </div>
           </div>
         </div>

@@ -28,7 +28,7 @@ function Hero() {
     fetchData();
   }, [url]);
 
-  console.log(data);
+  // console.log(data);
 
   return (
     <>
@@ -46,7 +46,7 @@ function Hero() {
 
             {/* mobile btn */}
             <a className="mobile-btn-hero" href="#market">
-              See Prices <i class="fa-solid fa-angle-down"></i>
+              See Prices <i className="fa-solid fa-angle-down"></i>
             </a>
 
             <div className="coin-slider">
