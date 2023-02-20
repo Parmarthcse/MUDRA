@@ -84,6 +84,11 @@ nav {
   gap: 4rem;
   list-style: none;
 }
+@media (max-width: 750px) {
+  .navbar ul {
+    display: none;
+  }
+}
 .navbar ul a {
   color: #f3f2f4;
   font-weight: 700;
@@ -102,12 +107,27 @@ nav {
 .navbar span i {
   cursor: pointer;
 }
+@media (max-width: 750px) {
+  .navbar span i {
+    display: none;
+  }
+}
 .navbar span i:hover {
   transition: all 0.3s;
   background-clip: text;
   -webkit-background-clip: text;
   color: transparent;
   background-image: linear-gradient(25deg, #2600fc, #ff00ea);
+}
+
+.hamburger-menu {
+  display: none;
+  font-size: 2.7rem;
+}
+@media (max-width: 750px) {
+  .hamburger-menu {
+    display: flex !important;
+  }
 }
 
 .sticky-nav {
@@ -129,10 +149,20 @@ nav {
   transform: translate(-50%, -50%);
   width: 100%;
 }
+@media (max-width: 750px) {
+  .hero-content {
+    top: 8.5%;
+  }
+}
+@media (max-width: 400px) {
+  .hero-content {
+    top: 8%;
+  }
+}
 .hero-content__text {
   font-size: 7rem;
   color: #f3f2f4;
-  max-width: 100rem;
+  max-width: 104rem;
   height: -moz-fit-content;
   height: fit-content;
   text-align: center;
@@ -149,6 +179,16 @@ nav {
 @media (max-width: 1000px) {
   .hero-content__text {
     font-size: 5rem;
+  }
+}
+@media (max-width: 750px) {
+  .hero-content__text {
+    font-size: 4.5rem;
+  }
+}
+@media (max-width: 450px) {
+  .hero-content__text {
+    font-size: 3.5rem;
   }
 }
 .hero-content__text span {
@@ -174,6 +214,11 @@ nav {
     left: -160px;
   }
 }
+@media (max-width: 900px) {
+  .btc-float {
+    display: none;
+  }
+}
 
 .eth-float {
   position: absolute;
@@ -189,6 +234,11 @@ nav {
 @media (max-width: 1000px) {
   .eth-float {
     right: -160px;
+  }
+}
+@media (max-width: 900px) {
+  .eth-float {
+    display: none;
   }
 }
 
@@ -211,6 +261,18 @@ nav {
   text-align: center;
   margin-top: 3rem;
 }
+@media (max-width: 750px) {
+  .coin-slider {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    row-gap: 2rem;
+  }
+}
+@media (max-width: 600px) {
+  .coin-slider {
+    display: none;
+  }
+}
 
 .slider-coin {
   font-size: 2rem;
@@ -224,6 +286,11 @@ nav {
   -webkit-user-select: none;
      -moz-user-select: none;
           user-select: none;
+}
+@media (max-width: 750px) {
+  .slider-coin {
+    margin: 0 auto;
+  }
 }
 .slider-coin img {
   width: 9rem;
@@ -249,6 +316,29 @@ nav {
 
 .green-text {
   color: rgb(14, 203, 129) !important;
+}
+
+.mobile-btn-hero {
+  display: none;
+  font-size: 2rem;
+  font-weight: 600;
+  width: 25rem;
+  text-align: center;
+  align-items: center;
+  justify-content: center;
+  gap: 1rem;
+  padding: 2rem 4rem;
+  background: linear-gradient(25deg, #2600fc, #ff00ea);
+  color: #f3f2f4;
+  border-radius: 10rem;
+  transition: all 0.2s;
+  margin: 0 auto;
+  margin-top: 3rem;
+}
+@media (max-width: 600px) {
+  .mobile-btn-hero {
+    display: flex;
+  }
 }
 
 .market-section {

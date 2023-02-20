@@ -35,6 +35,8 @@ function Navbar() {
           <span>
             <i className="fa-brands fa-twitter"></i>
             <i className="fa-brands fa-discord"></i>
+            {/* mobile */}
+            <i className="fa-solid fa-bars-staggered hamburger-menu"></i>
           </span>
         </div>
       </nav>

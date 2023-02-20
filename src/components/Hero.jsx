@@ -39,10 +39,16 @@ function Hero() {
               <img className="btc-float" src={Btc} alt="floating-el" />
               <h1>
                 Track and Trade
-                <br /> <span>Cryptocurrencies</span>
+                <br /> <span>Crypto currencies</span>
               </h1>
               <img className="eth-float" src={Eth} alt="floating-el" />
             </div>
+
+            {/* mobile btn */}
+            <a className="mobile-btn-hero" href="#market">
+              See Prices <i class="fa-solid fa-angle-down"></i>
+            </a>
+
             <div className="coin-slider">
               {data.map((item) => (
                 <div key={item.id} className="slider-coin">
