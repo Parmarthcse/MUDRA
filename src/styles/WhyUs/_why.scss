@@ -5,7 +5,7 @@
   padding: 10rem;
 
   @media (max-width: 700px) {
-    padding: 1rem;
+    padding: 0rem;
   }
 }
 
@@ -73,7 +73,6 @@
 .choose-box {
   border-radius: 2.4rem;
   background-color: rgba(255, 255, 255, 0.05);
-  box-shadow: rgba(0, 0, 0, 0.16);
   padding: 2.4rem;
   border: 1px solid rgba(131, 131, 131, 0.25);
   display: flex;
@@ -81,6 +80,10 @@
   gap: 4rem;
   font-family: $small-font;
   width: 100%;
+
+  @media (max-width: 400px) {
+    gap: 2rem;
+  }
 
   h4 {
     font-size: 2.5rem;
