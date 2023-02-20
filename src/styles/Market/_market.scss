@@ -39,8 +39,9 @@
       border-radius: 8px 8px 0 0;
       gap: 2rem;
 
-      @media (max-width: 530px) {
+      @media (max-width: 700px) {
         gap: 9rem;
+        width: fit-content;
       }
 
       p:first-child {
@@ -89,6 +90,10 @@
     border-bottom: 1px solid $color-white;
     align-items: center;
     gap: 2rem;
+
+    @media (max-width: 700px) {
+      width: fit-content;
+    }
 
     span {
       text-align: left;

@@ -433,9 +433,11 @@ nav {
   border-radius: 8px 8px 0 0;
   gap: 2rem;
 }
-@media (max-width: 530px) {
+@media (max-width: 700px) {
   .market-content__coin-list__top {
     gap: 9rem;
+    width: -moz-fit-content;
+    width: fit-content;
   }
 }
 .market-content__coin-list__top p:first-child {
@@ -477,6 +479,12 @@ nav {
   border-bottom: 1px solid #f3f2f4;
   align-items: center;
   gap: 2rem;
+}
+@media (max-width: 700px) {
+  .market-content .coin-row {
+    width: -moz-fit-content;
+    width: fit-content;
+  }
 }
 .market-content .coin-row span {
   text-align: left;
