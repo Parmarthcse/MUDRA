@@ -4,6 +4,8 @@ import Eth from "../images/hero/ethereum.png";
 
 function Hero() {
   const [data, setData] = useState([]);
+  const [coinsLoad, setCoinsLoad] = useState(true);
+
   const url = `https://api.coingecko.com/api/v3/coins/markets?vs_currency=usd&order=market_cap_desc&per_page=4&page=1&sparkline=false
   `;
 
@@ -49,7 +51,8 @@ function Hero() {
               See Prices <i className="fa-solid fa-angle-down"></i>
             </a>
 
-            <div className="coin-slider">
+            <div onLoad={() => setCoinsLoad(false)} className="coin-slider">
+              {coinsLoad && <span className="loader"></span>}
               {data.map((item) => (
                 <div key={item.id} className="slider-coin">
                   <img src={item?.image} alt={item?.name} />
