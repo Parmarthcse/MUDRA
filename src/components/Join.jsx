@@ -13,7 +13,7 @@ function Join() {
               <h2>
                 join us via <br /> <span>discord</span>
               </h2>
-              <p>Invest and manage all your NFTs at one place.</p>
+              <p>Invest and manage all your crypto at one place.</p>
               <a target="_blank" href="https://discord.com/">
                 Join via Discord
               </a>

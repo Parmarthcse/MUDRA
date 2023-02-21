@@ -20,12 +20,12 @@ function WhyUs() {
                 <ChooseBox
                   img="fa-solid fa-pen-ruler"
                   title="SELECT YOUR QUANTITY"
-                  text="Upload your NFTs and set a title, description and price."
+                  text="Upload your crypto and set a title, description and price."
                 />
                 <ChooseBox
                   img="fa-solid fa-bolt"
                   title="CONFIRM TRANSACTION"
-                  text="Earn ETH all your NFTs that you sell on our marketplace."
+                  text="Earn by selling your crypto on our marketplace."
                 />
               </div>
               <div className="choose-container__content__2">
@@ -35,13 +35,13 @@ function WhyUs() {
                 <ChooseBox
                   img="fa-solid fa-satellite-dish"
                   title="RECEIVE YOUR OWN NFTS"
-                  text="Invest all your NFTs at one place on one platform."
+                  text="Invest all your crypto at one place on one platform."
                 />
                 <ChooseBox
                   img="fa-solid fa-chess-knight"
                   title="TAKE A MARKET
                   TO SELL"
-                  text="Discover, collect the right NFT collections to buy or sell."
+                  text="Discover, collect the right crypto collections to buy or sell."
                 />
                 <ChooseBox
                   img="fa-solid fa-boxes-stacked"
