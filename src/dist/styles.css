@@ -433,9 +433,20 @@ nav {
   border-radius: 8px 8px 0 0;
   gap: 2rem;
 }
+@media (max-width: 800px) {
+  .market-content__coin-list__top {
+    display: flex;
+    justify-content: space-between;
+  }
+}
+@media (max-width: 800px) {
+  .market-content__coin-list__top p {
+    width: 18rem;
+    text-align: center;
+  }
+}
 @media (max-width: 700px) {
   .market-content__coin-list__top {
-    gap: 9rem;
     width: -moz-fit-content;
     width: fit-content;
   }
@@ -486,11 +497,26 @@ nav {
     width: fit-content;
   }
 }
+@media (max-width: 800px) {
+  .market-content .coin-row p:last-child {
+    width: 23rem;
+  }
+}
+@media (max-width: 800px) {
+  .market-content .coin-row p {
+    width: 15rem;
+  }
+}
 .market-content .coin-row span {
   text-align: left;
   align-items: center;
   display: flex;
   gap: 2rem;
+}
+@media (max-width: 800px) {
+  .market-content .coin-row span {
+    width: 19rem;
+  }
 }
 .market-content .coin-row span img {
   width: 5rem;
