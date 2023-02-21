@@ -79,13 +79,13 @@
         border-radius: 50%;
         cursor: pointer;
         background-color: $color-white;
-
-        &:first-child {
-          background: $color-blue-purp;
-          color: $color-white;
-        }
       }
     }
+  }
+
+  .activePagi {
+    background: $color-blue-purp;
+    color: $color-white;
   }
 
   .coin-row {

@@ -2,7 +2,9 @@ import { useEffect, useState } from "react";
 
 function MarketUpdate() {
   const [data, setData] = useState([]);
-  const url = `https://api.coingecko.com/api/v3/coins/markets?vs_currency=usd&order=market_cap_desc&per_page=10&page=1&sparkline=false
+  const [currentPage, setCurrentPage] = useState([]);
+
+  const url = `https://api.coingecko.com/api/v3/coins/markets?vs_currency=usd&order=market_cap_desc&per_page=10&page=${currentPage}&sparkline=false
   `;
 
   function numberWithCommas(x) {
@@ -25,6 +27,19 @@ function MarketUpdate() {
 
     fetchData();
   }, [url]);
+
+  const paginationButtons = [];
+  for (let i = 1; i <= 6; i++) {
+    paginationButtons.push(
+      <button
+        key={i}
+        onClick={() => setCurrentPage(i)}
+        className={i === currentPage ? "activePagi" : ""}
+      >
+        {i}
+      </button>
+    );
+  }
 
   // console.log(data);
 
@@ -64,11 +79,7 @@ function MarketUpdate() {
               </div>
             </div>
             <div className="market-content__coin-list__pagination">
-              <button>1</button>
-              <button>2</button>
-              <button>3</button>
-              <button>4</button>
-              <button>5</button>
+              {paginationButtons}
             </div>
           </div>
         </div>
