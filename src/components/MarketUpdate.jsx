@@ -30,7 +30,7 @@ function MarketUpdate() {
   }, [url]);
 
   const paginationButtons = [];
-  for (let i = 1; i <= 6; i++) {
+  for (let i = 1; i <= 5; i++) {
     paginationButtons.push(
       <button
         key={i}
@@ -41,6 +41,13 @@ function MarketUpdate() {
       </button>
     );
   }
+
+  const scrollMarket = () => {
+    window.scrollTo({
+      top: window.pageYOffset - 800,
+      behavior: "smooth",
+    });
+  };
 
   // console.log(data);
 
@@ -83,7 +90,10 @@ function MarketUpdate() {
                 ))}
               </div>
             </div>
-            <div className="market-content__coin-list__pagination">
+            <div
+              onClick={scrollMarket}
+              className="market-content__coin-list__pagination"
+            >
               {paginationButtons}
             </div>
           </div>
