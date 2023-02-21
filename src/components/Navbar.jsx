@@ -1,4 +1,5 @@
 import { useState } from "react";
+import { Link } from "react-router-dom";
 
 function Navbar() {
   const [sticky, setSticky] = useState(false);
@@ -29,7 +30,9 @@ function Navbar() {
     <>
       <nav className={sticky ? "sticky-nav" : ""}>
         <div className="navbar">
-          <p onClick={goTop}>COINDOM</p>
+          <Link to="/">
+            <p onClick={goTop}>COINDOM</p>
+          </Link>
           <ul>
             <li>
               <a href="#home">Home</a>
