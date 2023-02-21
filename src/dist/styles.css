@@ -519,6 +519,14 @@ nav {
   border-bottom: 1px solid #f3f2f4;
   align-items: center;
   gap: 2rem;
+  background-color: #0f051d;
+  -webkit-user-select: none;
+     -moz-user-select: none;
+          user-select: none;
+}
+.market-content .coin-row:hover {
+  background-color: #200840;
+  cursor: pointer;
 }
 @media (max-width: 700px) {
   .market-content .coin-row {
