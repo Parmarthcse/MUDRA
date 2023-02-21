@@ -1,0 +1,77 @@
+@use "../global" as *;
+
+.coin-page {
+  background-image: linear-gradient(to top, $bg-black 30%, #130749 70%);
+  width: 100%;
+  height: 100vh;
+}
+
+.coin-content {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  color: $color-white;
+  width: 100%;
+  height: 100vh;
+
+  &__img-side {
+    width: 30%;
+    border-right: 2px solid $color-white;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 2rem;
+
+    h2 {
+      font-size: 3.3rem;
+    }
+
+    p {
+      font-size: 2rem;
+      font-weight: 500;
+    }
+
+    img {
+      width: 22rem;
+      height: 22rem;
+    }
+  }
+
+  &__text-side {
+    width: 70%;
+    padding: 3rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    white-space: nowrap;
+
+    &__24h,
+    &__current,
+    &__symbol {
+      display: flex;
+      font-size: $text-normal;
+      gap: 1rem;
+      justify-content: center;
+
+      p {
+        span {
+          color: $color-white;
+          text-transform: uppercase;
+        }
+      }
+    }
+  }
+}
+
+.numb {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+}
+
+.description {
+  max-width: 80%;
+  display: flex;
+}

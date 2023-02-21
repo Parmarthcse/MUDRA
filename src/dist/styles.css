@@ -92,6 +92,9 @@ nav {
   left: 0;
   z-index: 200;
 }
+nav a {
+  color: #f3f2f4;
+}
 
 .navbar {
   display: flex;
@@ -817,4 +820,69 @@ footer {
   -webkit-background-clip: text;
   color: transparent;
   background-image: linear-gradient(25deg, #2600fc, #ff00ea);
+}
+
+.coin-page {
+  background-image: linear-gradient(to top, #0f051d 30%, #130749 70%);
+  width: 100%;
+  height: 100vh;
+}
+
+.coin-content {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  color: #f3f2f4;
+  width: 100%;
+  height: 100vh;
+}
+.coin-content__img-side {
+  width: 30%;
+  border-right: 2px solid #f3f2f4;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 2rem;
+}
+.coin-content__img-side h2 {
+  font-size: 3.3rem;
+}
+.coin-content__img-side p {
+  font-size: 2rem;
+  font-weight: 500;
+}
+.coin-content__img-side img {
+  width: 22rem;
+  height: 22rem;
+}
+.coin-content__text-side {
+  width: 70%;
+  padding: 3rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  white-space: nowrap;
+}
+.coin-content__text-side__24h, .coin-content__text-side__current, .coin-content__text-side__symbol {
+  display: flex;
+  font-size: 2rem;
+  gap: 1rem;
+  justify-content: center;
+}
+.coin-content__text-side__24h p span, .coin-content__text-side__current p span, .coin-content__text-side__symbol p span {
+  color: #f3f2f4;
+  text-transform: uppercase;
+}
+
+.numb {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+}
+
+.description {
+  max-width: 80%;
+  display: flex;
 }/*# sourceMappingURL=styles.css.map */
