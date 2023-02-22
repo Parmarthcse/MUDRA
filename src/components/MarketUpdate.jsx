@@ -1,4 +1,5 @@
 import { useEffect, useState } from "react";
+import { Link } from "react-router-dom";
 
 function MarketUpdate() {
   const [data, setData] = useState([]);
@@ -70,7 +71,11 @@ function MarketUpdate() {
               >
                 {apiLoad && <span className="loader"></span>}
                 {data.map((item) => (
-                  <div className="coin-row" key={item.id}>
+                  <Link
+                    to={`/coin/${item.id}`}
+                    className="coin-row"
+                    key={item.id}
+                  >
                     <span>
                       <img src={item.image} alt={item.name} /> {item.name}
                     </span>
@@ -86,7 +91,7 @@ function MarketUpdate() {
                       {item.price_change_24h.toFixed(2) + " %"}
                     </p>
                     <p>{"$ " + numberWithCommas(item.market_cap)}</p>
-                  </div>
+                  </Link>
                 ))}
               </div>
             </div>
