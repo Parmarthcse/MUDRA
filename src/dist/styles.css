@@ -860,16 +860,16 @@ footer {
 .coin-content__text-side {
   width: 70%;
   padding: 3rem;
-  display: flex;
+  display: grid;
   flex-direction: column;
   justify-content: space-between;
-  white-space: nowrap;
 }
 .coin-content__text-side__24h, .coin-content__text-side__current, .coin-content__text-side__symbol {
   display: flex;
   font-size: 2rem;
   gap: 1rem;
   justify-content: center;
+  white-space: nowrap;
 }
 .coin-content__text-side__24h p span, .coin-content__text-side__current p span, .coin-content__text-side__symbol p span {
   color: #f3f2f4;
@@ -883,6 +883,9 @@ footer {
 }
 
 .description {
-  max-width: 80%;
-  display: flex;
+  width: 100%;
+  font-size: 2rem;
+  height: 30rem;
+  overflow-y: auto;
+  margin-top: 4rem;
 }/*# sourceMappingURL=styles.css.map */

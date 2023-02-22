@@ -42,10 +42,9 @@
   &__text-side {
     width: 70%;
     padding: 3rem;
-    display: flex;
+    display: grid;
     flex-direction: column;
     justify-content: space-between;
-    white-space: nowrap;
 
     &__24h,
     &__current,
@@ -54,6 +53,7 @@
       font-size: $text-normal;
       gap: 1rem;
       justify-content: center;
+      white-space: nowrap;
 
       p {
         span {
@@ -72,6 +72,9 @@
 }
 
 .description {
-  max-width: 80%;
-  display: flex;
+  width: 100%;
+  font-size: 2rem;
+  height: 30rem;
+  overflow-y: auto;
+  margin-top: 4rem;
 }

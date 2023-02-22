@@ -67,7 +67,7 @@ function Coin() {
                   <span>{coin.symbol}</span>
                 </div>
               </div>
-              {/* <div className="description">
+              <div className="description">
                 <p
                   dangerouslySetInnerHTML={{
                     __html: DOMPurify.sanitize(
@@ -75,7 +75,7 @@ function Coin() {
                     ),
                   }}
                 ></p>
-              </div> */}
+              </div>
             </div>
           </div>
         </div>
