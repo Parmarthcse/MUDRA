@@ -1,6 +1,7 @@
 import { useEffect, useState } from "react";
 import Btc from "../images/hero/bitcoin.png";
 import Eth from "../images/hero/ethereum.png";
+import { Link } from "react-router-dom";
 
 function Hero() {
   const [data, setData] = useState([]);
@@ -54,7 +55,11 @@ function Hero() {
             <div onLoad={() => setCoinsLoad(false)} className="coin-slider">
               {coinsLoad && <span className="loader"></span>}
               {data.map((item) => (
-                <div key={item.id} className="slider-coin">
+                <Link
+                  to={`/coin/${item.id}`}
+                  key={item.id}
+                  className="slider-coin"
+                >
                   <img src={item?.image} alt={item?.name} />
                   <p className="slider-coin__name">
                     {item?.name}{" "}
@@ -72,7 +77,7 @@ function Hero() {
                   <p className="slider-coin__price">
                     {"$ " + numberWithCommas(item.current_price?.toFixed(2))}
                   </p>
-                </div>
+                </Link>
               ))}
             </div>
           </div>
