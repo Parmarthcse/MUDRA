@@ -5,6 +5,7 @@ import DOMPurify from "dompurify";
 function Coin() {
   const { coinId } = useParams();
   const [coin, setCoin] = useState({});
+  const [loadCoin, setLoadCoin] = useState(true);
 
   const url = `https://api.coingecko.com/api/v3/coins/${coinId}`;
 
@@ -29,7 +30,7 @@ function Coin() {
     return x.toString().replace(/\B(?=(\d{3})+(?!\d))/g, ",");
   }
 
-  console.log(coin);
+  // console.log(coin);
 
   const h24 = coin.market_data ? coin.market_data.price_change_24h : "";
 
@@ -37,8 +38,9 @@ function Coin() {
     <>
       <section className="coin-page">
         <div className="container">
-          <div className="coin-content">
+          <div onLoad={() => setLoadCoin(false)} className="coin-content">
             <div className="coin-content__img-side">
+              {loadCoin && <span className="loader"></span>}
               {coin.image ? <img src={coin.image.large} alt={coin.id} /> : null}
               <h2>{coin.name}</h2>
               <p>Rank: #{coin.coingecko_rank}</p>
@@ -67,6 +69,7 @@ function Coin() {
                   <span>{coin.symbol}</span>
                 </div>
               </div>
+              {loadCoin && <span className="loader"></span>}
               <div className="description">
                 <p
                   dangerouslySetInnerHTML={{
