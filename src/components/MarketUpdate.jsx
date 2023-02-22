@@ -88,7 +88,7 @@ function MarketUpdate() {
                           : "red-text")
                       }
                     >
-                      {item.price_change_24h.toFixed(2) + " %"}
+                      {item.price_change_percentage_24h?.toFixed(2) + " %"}
                     </p>
                     <p>{"$ " + numberWithCommas(item.market_cap)}</p>
                   </Link>

@@ -51,7 +51,9 @@ function Coin() {
                   <span>24h Change:</span>
                   <p className={h24 >= 0 ? "green-text" : "red-text"}>
                     {coin.market_data
-                      ? coin.market_data.price_change_24h.toFixed(2) + "%"
+                      ? coin.market_data.price_change_percentage_24h.toFixed(
+                          2
+                        ) + "%"
                       : ""}
                   </p>
                 </div>

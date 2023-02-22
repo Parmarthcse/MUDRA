@@ -66,7 +66,7 @@ function Hero() {
                     <span
                       className={
                         "slider-coin__price " +
-                        (item.price_change_percentage_24h < 0
+                        (item.price_change_percentage_24h <= 0
                           ? "red-text"
                           : "green-text")
                       }
