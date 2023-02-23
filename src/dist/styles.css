@@ -926,4 +926,7 @@ footer {
   overflow-y: auto;
   margin-top: 4rem;
   text-align: left;
+}
+.description a {
+  color: rgb(14, 203, 129);
 }/*# sourceMappingURL=styles.css.map */
