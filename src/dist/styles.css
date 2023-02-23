@@ -241,7 +241,7 @@ nav a {
 }
 @media (max-width: 400px) {
   .hero-content {
-    top: 8%;
+    top: 7%;
   }
 }
 .hero-content__text {

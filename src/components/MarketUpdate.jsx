@@ -50,6 +50,10 @@ function MarketUpdate() {
     });
   };
 
+  const scrollTop = () => {
+    window.scrollTo({ top: (0, 0), behavior: "smooth" });
+  };
+
   // console.log(data);
 
   return (
@@ -72,6 +76,7 @@ function MarketUpdate() {
                 {apiLoad && <span className="loader"></span>}
                 {data.map((item) => (
                   <Link
+                    onClick={scrollTop}
                     to={`/coin/${item.id}`}
                     className="coin-row"
                     key={item.id}
