@@ -62,7 +62,9 @@ function Coin() {
                   <p className={"green-text"}>
                     {coin.market_data
                       ? "$" +
-                        numberWithCommas(coin.market_data.current_price.usd)
+                        numberWithCommas(
+                          coin.market_data.current_price.usd.toFixed(2)
+                        )
                       : null}
                   </p>
                 </div>
