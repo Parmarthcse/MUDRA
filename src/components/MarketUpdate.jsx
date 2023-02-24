@@ -15,20 +15,28 @@ function MarketUpdate() {
 
   useEffect(() => {
     const fetchData = async () => {
-      try {
-        const response = await fetch(url);
-        if (!response.ok) {
-          throw new Error("Error!");
-        }
-        const jsonData = await response.json();
-        setData(jsonData);
-      } catch (error) {
-        console.error(error);
-      }
+      const response = await fetch(url);
+      const json = await response.json();
+      setData(json);
     };
-
     fetchData();
   }, [url]);
+
+  // useEffect(() => {
+  //   const fetchData = async () => {
+  //     try {
+  //       const response = await fetch(url);
+  //       if (!response.ok) {
+  //         throw new Error("Error!");
+  //       }
+  //       const jsonData = await response.json();
+  //       setData(jsonData);
+  //     } catch (error) {
+  //       console.error(error);
+  //     }
+  //   };
+  //   fetchData();
+  // }, [url]);
 
   const paginationButtons = [];
   for (let i = 1; i <= 5; i++) {
