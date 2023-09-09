@@ -2,6 +2,7 @@ import { useEffect, useState } from "react";
 import Btc from "../images/hero/bitcoin.png";
 import Eth from "../images/hero/ethereum.png";
 import { Link } from "react-router-dom";
+import { IconChevronDown } from "@tabler/icons-react";
 
 function Hero() {
   const [data, setData] = useState([]);
@@ -49,7 +50,7 @@ function Hero() {
 
             {/* mobile btn */}
             <a className="mobile-btn-hero" href="#market">
-              See Prices <i className="fa-solid fa-angle-down"></i>
+              See Prices <IconChevronDown />
             </a>
 
             <div onLoad={() => setCoinsLoad(false)} className="coin-slider">

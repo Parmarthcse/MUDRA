@@ -1,5 +1,13 @@
 import ChooseBox from "./ChooseBox";
 import BitHand from "../images/chooseus/choose-main.png";
+import {
+  IconChecklist,
+  IconDeviceMobileMessage,
+  IconMoneybag,
+  IconPencilBolt,
+  IconStack,
+  IconWallet,
+} from "@tabler/icons-react";
 
 function WhyUs() {
   return (
@@ -13,17 +21,17 @@ function WhyUs() {
             <div className="choose-container__content">
               <div className="choose-container__content__1">
                 <ChooseBox
-                  img="fa-solid fa-wallet"
+                  img={<IconWallet />}
                   title="CONNECT YOUR WALLET"
                   text="Use Trust Wallet, Metamask or to connect to the app."
                 />
                 <ChooseBox
-                  img="fa-solid fa-pen-ruler"
+                  img={<IconPencilBolt />}
                   title="SELECT YOUR QUANTITY"
                   text="Upload your crypto and set a title, description and price."
                 />
                 <ChooseBox
-                  img="fa-solid fa-bolt"
+                  img={<IconChecklist />}
                   title="CONFIRM TRANSACTION"
                   text="Earn by selling your crypto on our marketplace."
                 />
@@ -33,18 +41,18 @@ function WhyUs() {
               </div>
               <div className="choose-container__content__3">
                 <ChooseBox
-                  img="fa-solid fa-satellite-dish"
+                  img={<IconDeviceMobileMessage />}
                   title="RECEIVE YOUR OWN NFTS"
                   text="Invest all your crypto at one place on one platform."
                 />
                 <ChooseBox
-                  img="fa-solid fa-chess-knight"
+                  img={<IconMoneybag />}
                   title="TAKE A MARKET
                   TO SELL"
                   text="Discover, collect the right crypto collections to buy or sell."
                 />
                 <ChooseBox
-                  img="fa-solid fa-boxes-stacked"
+                  img={<IconStack />}
                   title="DRIVE YOUR COLLECTION"
                   text="We make it easy to Discover, Invest and manage."
                 />

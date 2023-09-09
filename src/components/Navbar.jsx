@@ -1,3 +1,9 @@
+import {
+  IconBrandDiscord,
+  IconBrandTwitter,
+  IconMenu2,
+  IconX,
+} from "@tabler/icons-react";
 import { useState } from "react";
 import { Link } from "react-router-dom";
 
@@ -48,20 +54,17 @@ function Navbar() {
             </li>
           </ul>
           <span>
-            <i className="fa-brands fa-twitter"></i>
-            <i className="fa-brands fa-discord"></i>
+            <IconBrandTwitter />
+            <IconBrandDiscord />
             {/* mobile */}
-            <i
-              onClick={openMobile}
-              className="fa-solid fa-bars-staggered hamburger-menu"
-            ></i>
+            <IconMenu2 onClick={openMobile} className="hamburger-menu" />
           </span>
         </div>
       </nav>
 
       {/* mobile nav */}
       <div className={`mobile-nav ${mobile ? "mobile-up" : ""}`}>
-        <i onClick={openMobile} className="fa-solid fa-xmark close-mobile"></i>
+        <IconX onClick={openMobile} className="close-mobile" />
         <ul>
           <li onClick={openMobile}>
             <a href="#home">Home</a>
