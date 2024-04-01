@@ -1,4 +1,4 @@
-<div align='center'><img style="width:16%" src='https://user-images.githubusercontent.com/105128267/220607693-29987a1c-8f0d-4835-9bfe-3b5c9f326b17.png'/></div>
+<div align='center'><img style="width:16%"></div>
 
 <h2>About the project</h2>
 
@@ -19,10 +19,10 @@ The website is connected to the Coingecko API, which is a popular source of data
 
 <h2>Screenshots of the Project 📸</h2>
 <br>
-<h3 align='center'>Home Page 🏡</h3>
+<h3 align='center'></h3>
 
 <div align='center'>
-<img src=''/>
+
 
 </div>
 
