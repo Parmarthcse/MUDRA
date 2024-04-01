@@ -31,5 +31,6 @@ The website is connected to the Coingecko API, which is a popular source of data
 <h3 align='center'>Coin Page 🪙</h3>
 
 <div align='center'>
-<img src='https://user-images.githubusercontent.com/105128267/220609015-e64cb000-b8d2-41ce-8a9a-e610d2f1ae5b.png'/>
+<img src='![Screenshot 2024-04-01 211344](https://github.com/Parmarthcse/MUDRA/assets/157233549/a98add37-791b-4ab5-85c0-e32312b11537)
+'/>
 </div>
