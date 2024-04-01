@@ -17,12 +17,6 @@ The website is connected to the Coingecko API, which is a popular source of data
 
 <br>
 
-<h2>Screenshots of the Project 📸</h2>
-<br>
-<h3 align='center'></h3>
-
-<div align='center'>
-
 
 </div>
 
